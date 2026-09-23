@@ -48,6 +48,14 @@ export function HeroSection() {
 
           <div className="hero-actions">
             <a href="#presale" className="button primary-button">Buy $WELLS Now</a>
+            <a
+              href={siteData.socialLinks.telegram}
+              className="button hero-telegram-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join Telegram
+            </a>
             <a href="#whitepaper" className="text-link">View Whitepaper</a>
           </div>
 
