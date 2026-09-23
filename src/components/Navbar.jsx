@@ -27,9 +27,19 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a href="#presale" className="button buy-button">
-          Buy {siteData.brand}
-        </a>
+        <div className="nav-actions">
+          <a
+            href={siteData.socialLinks.telegram}
+            className="button telegram-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Telegram
+          </a>
+          <a href="#presale" className="button buy-button">
+            Buy {siteData.brand}
+          </a>
+        </div>
 
         <button
           type="button"
