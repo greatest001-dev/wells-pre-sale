@@ -288,6 +288,14 @@ export function CommunitySection() {
           <p>
             Get real-time presale updates, deposit support, and verification directly from the dev team.
           </p>
+          <a
+            href={siteData.socialLinks.telegram}
+            className="button primary-button community-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Join the community
+          </a>
         </div>
       </div>
     </section>

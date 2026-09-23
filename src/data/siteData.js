@@ -156,5 +156,6 @@ export const siteData = {
   ],
   socialLinks: {
     whitepaper: '#',
+    telegram: 'https://t.me/+rEs6MIuTUo9hNTJk',
   },
 };

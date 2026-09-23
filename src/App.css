@@ -931,6 +931,10 @@ main {
   letter-spacing: -0.06em;
 }
 
+.community-button {
+  margin-top: 20px;
+}
+
 .faq-list {
   display: grid;
   gap: 14px;
