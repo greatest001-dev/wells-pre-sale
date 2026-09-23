@@ -1,18 +1,18 @@
 import { useMemo, useState } from 'react';
 import { siteData } from '../data/siteData';
 
-const MIN_SOL = 0.5;
+const MIN_SOL = 3;
 const MAX_SOL = 50;
 
 export default function PresaleCalculator() {
-  const [solValue, setSolValue] = useState(1);
+  const [solValue, setSolValue] = useState(MIN_SOL);
   const [error, setError] = useState('');
 
   const tier = useMemo(() => {
-    if (solValue >= 5) return siteData.bonusTiers[3];
-    if (solValue >= 3) return siteData.bonusTiers[2];
-    if (solValue >= 1) return siteData.bonusTiers[1];
-    if (solValue >= 0.5) return siteData.bonusTiers[0];
+    if (solValue >= 35) return siteData.bonusTiers[3];
+    if (solValue >= 20) return siteData.bonusTiers[2];
+    if (solValue >= 10) return siteData.bonusTiers[1];
+    if (solValue >= MIN_SOL) return siteData.bonusTiers[0];
     return null;
   }, [solValue]);
 
@@ -25,7 +25,7 @@ export default function PresaleCalculator() {
     }
 
     if (nextValue < MIN_SOL) {
-      setError('Minimum contribution is 0.5 SOL');
+      setError(`Minimum contribution is ${MIN_SOL} SOL`);
       return;
     }
 
@@ -56,7 +56,7 @@ export default function PresaleCalculator() {
             onChange={handleChange}
           />
           <div className="calc-ruler">
-            <span>Min 0.5 SOL</span>
+            <span>Min {MIN_SOL} SOL</span>
             <span>Max 50 SOL per wallet</span>
           </div>
           {error && <div className="validation-error">{error}</div>}

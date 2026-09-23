@@ -125,7 +125,7 @@ export function PresaleSection() {
           <ol className="deposit-steps">
             <li>Copy the address above exactly</li>
             <li>Open your Phantom/Solflare wallet</li>
-            <li>Send SOL to this address (Min: 0.5 SOL | Max: 50 SOL per wallet)</li>
+            <li>Send SOL to this address (Min: 3 SOL | Max: 50 SOL per wallet)</li>
             <li>Save your transaction hash (TX ID)</li>
           </ol>
         </div>
@@ -288,9 +288,6 @@ export function CommunitySection() {
           <p>
             Get real-time presale updates, deposit support, and verification directly from the dev team.
           </p>
-          <a className="button primary-button" href={siteData.socialLinks.telegram} target="_blank" rel="noreferrer">
-            Join Telegram
-          </a>
         </div>
       </div>
     </section>
@@ -330,10 +327,6 @@ export function FooterSection() {
           ))}
         </div>
 
-        <div className="footer-meta">
-          <a href={siteData.socialLinks.x} target="_blank" rel="noreferrer">X / Twitter</a>
-          <a href={siteData.socialLinks.telegram} target="_blank" rel="noreferrer">Telegram</a>
-        </div>
       </div>
 
       <div className="container footer-bottom">

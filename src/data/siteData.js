@@ -25,10 +25,10 @@ export const siteData = {
     'Mint Authority Renounced',
   ],
   bonusTiers: [
-    { range: '0.5 – 1 SOL', label: 'Starter', bonus: 5 },
-    { range: '1 – 3 SOL', label: 'Builder', bonus: 10 },
-    { range: '3 – 5 SOL', label: 'Patron', bonus: 15 },
-    { range: '5+ SOL', label: 'Guardian', bonus: 20, special: 'Priority allocation' },
+    { range: '3 – 10 SOL', label: 'Starter', bonus: 5 },
+    { range: '10 – 20 SOL', label: 'Builder', bonus: 10 },
+    { range: '20 – 35 SOL', label: 'Patron', bonus: 15 },
+    { range: '35+ SOL', label: 'Guardian', bonus: 20, special: 'Priority allocation' },
   ],
   tokenomics: [
     { label: 'Community Airdrop ($BARSIK holders)', value: 50 },
@@ -121,17 +121,17 @@ export const siteData = {
     {
       question: 'How do I participate in the $WELLS presale?',
       answer:
-        'Copy the official deposit address exactly, open your Phantom or Solflare wallet, and send between 0.5 and 50 SOL. Save your transaction hash, then submit your deposit proof to the dev team via Twitter/X or Telegram. Tokens are distributed manually within 24 hours of verification.',
+        'Copy the official deposit address exactly, open your Phantom or Solflare wallet, and send between 3 and 50 SOL. Save your transaction hash, then submit your deposit proof to the dev team via Telegram. Tokens are distributed manually within 24 hours of verification.',
     },
     {
       question: 'What is the minimum and maximum deposit?',
       answer:
-        'The minimum deposit is 0.5 SOL and the maximum is 50 SOL per wallet. Deposits outside this range may not qualify for the corresponding tier bonus.',
+        'The minimum deposit is 3 SOL and the maximum is 50 SOL per wallet. Deposits outside this range may not qualify for the corresponding tier bonus.',
     },
     {
       question: 'How do the bonus tiers work?',
       answer:
-        'Your $WELLS bonus is calculated automatically from your SOL amount: 0.5–1 SOL gives 5%, 1–3 SOL gives 10%, 3–5 SOL gives 15%, and 5+ SOL gives 20% plus priority allocation.',
+        'Your $WELLS bonus is calculated automatically from your SOL amount: 3–10 SOL gives 5%, 10–20 SOL gives 10%, 20–35 SOL gives 15%, and 35+ SOL gives 20% plus priority allocation.',
     },
     {
       question: 'When will I receive my $WELLS tokens?',
@@ -141,7 +141,7 @@ export const siteData = {
     {
       question: 'How do I submit my deposit proof?',
       answer:
-        'Send three things to the dev team via any official channel: a screenshot of the transaction from your wallet, the transaction hash (TX ID), and your receiving wallet address for the $WELLS tokens.',
+        'Send three things to the dev team via the official Telegram channel: a screenshot of the transaction from your wallet, the transaction hash (TX ID), and your receiving wallet address for the $WELLS tokens.',
     },
     {
       question: 'Is the deposit address safe to send to?',
@@ -155,8 +155,6 @@ export const siteData = {
     },
   ],
   socialLinks: {
-    x: 'https://x.com/herrenx1?s=21',
-    telegram: 'https://t.co/GIUZG46kIl',
     whitepaper: '#',
   },
 };
