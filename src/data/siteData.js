@@ -12,9 +12,10 @@ export const siteData = {
     { label: 'FAQ', href: '#faq' },
   ],
   presale: {
-    raised: 742350,
+    raised: 1070101,
     target: 2000000,
     participants: 3184,
+    displayPercentage: 51.7,
     rate: 275000,
     endDate: '2026-12-31T00:00:00Z',
     address: 'AbHVW4oJ2YUJGCtAsxRryFit49qe9EiXuAmJRraYCgji',

@@ -5,7 +5,7 @@ import ProgressBar from './ProgressBar';
 import SectionHeading from './SectionHeading';
 
 export function HeroSection() {
-  const percentage = (siteData.presale.raised / siteData.presale.target) * 100;
+  const percentage = siteData.presale.displayPercentage ?? ((siteData.presale.raised / siteData.presale.target) * 100);
 
   return (
     <section className="hero">
@@ -68,7 +68,7 @@ export function HeroSection() {
             </div>
             <ProgressBar value={siteData.presale.raised} max={siteData.presale.target} />
             <div className="funded-meta">
-              <span>{percentage.toFixed(1)}% filled</span>
+              <span>{Number(percentage).toFixed(1)}% filled</span>
               <span>{siteData.presale.participants.toLocaleString()} live participants</span>
             </div>
           </div>
